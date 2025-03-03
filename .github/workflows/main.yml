@@ -27,7 +27,7 @@ jobs:
           pip install arxiv requests tenacity loguru
 
       - name: Run daily Arxiv script
-        run: python daily_arxiv.py
+        run: python arxiv_monitor.py
 
       - name: Commit changes
         uses: github-actions-x/commit@v2.9
