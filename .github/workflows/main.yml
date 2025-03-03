@@ -1,0 +1,40 @@
+name: Run Arxiv Papers Daily
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8,22 * * *'
+
+env:
+  GITHUB_USER_NAME: dowwie
+  GITHUB_USER_EMAIL: dkcdkg@gmail.com
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.11.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install arxiv requests tenacity loguru
+
+      - name: Run daily Arxiv script
+        run: python daily_arxiv.py
+
+      - name: Commit changes
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Github Action Automatic Update ToDs Arxiv Papers"
+          files: README.md docs/arxiv-daily.json last_run.txt logs/* data/*
+          rebase: 'true'
+          name: ${{ env.GITHUB_USER_NAME }}
+          email: ${{ env.GITHUB_USER_EMAIL }}
