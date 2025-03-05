@@ -4820,3 +4820,9 @@
 2025-03-05T10:43:56.245099+0000 INFO Fetched 0 papers in 0.77s
 2025-03-05T10:43:56.252967+0000 INFO Markdown generated
 2025-03-05T10:43:56.253250+0000 INFO Process completed
+2025-03-05T22:09:52.558504+0000 INFO Starting Arxiv tracking
+2025-03-05T22:09:52.581683+0000 INFO Updating with papers since 2025-03-05
+2025-03-05T22:09:53.427915+0000 INFO Got empty first page; stopping generation
+2025-03-05T22:09:53.428064+0000 INFO Fetched 0 papers in 0.85s
+2025-03-05T22:09:53.435945+0000 INFO Markdown generated
+2025-03-05T22:09:53.436187+0000 INFO Process completed
