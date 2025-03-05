@@ -37,11 +37,8 @@ def json_to_md(json_filename, md_filename):
         data = json.load(f)
 
     with open(md_filename, "w") as f:
-        f.write(f"## Updated on {today}\n\n")
-        f.write("[![Contributors][contributors-shield]][contributors-url]\n")
-        f.write("[![Forks][forks-shield]][forks-url]\n")
-        f.write("[![Stars][stars-shield]][stars-url]\n")
-        f.write("[![Issues][issues-shield]][issues-url]\n")
+        f.write(f"## Last updated on {today}\n\n")
+
         # About section immediately following issues shield
         f.write("\n## About\n")
         f.write(
