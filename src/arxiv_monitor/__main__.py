@@ -42,7 +42,10 @@ def json_to_md(json_filename, md_filename):
         # About section immediately following issues shield
         f.write("\n## About\n")
         f.write(
-            "This repository tracks Arxiv papers on Task Oriented Dialogue Systems.\n"
+            "This repository tracks Arxiv papers on Task Oriented Dialogue Systems."
+        )
+        f.write(
+            "As a GHA task, it simply tracks metadata.  If run locally, you can download the papers.\n\n"
         )
         f.write(
             "- **Seeding:** Initial population covers papers from the last 5 years (run with --seed).\n"
