@@ -15,20 +15,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
+      
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
           python-version: 3.12.9
-
+      
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip 
+          python -m pip install --upgrade pip
           pip install dist/arxiv_monitor-*.whl
-
+      
       - name: Run daily Arxiv script
-        run: python arxiv_monitor
-
+        run: python -m arxiv_monitor
+      
       - name: Commit changes
         uses: github-actions-x/commit@v2.9
         with:

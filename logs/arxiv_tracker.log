@@ -4785,3 +4785,26 @@
 2025-03-02T20:36:54.139665-0500 INFO Fetched 500 papers in 2585.03s
 2025-03-02T20:36:54.188920-0500 INFO Markdown generated
 2025-03-02T20:36:54.190259-0500 INFO Process completed
+2025-03-05T05:22:22.176360-0500 INFO Starting Arxiv tracking
+2025-03-05T05:22:22.176983-0500 INFO Seeding with papers since 2020-03-06
+2025-03-05T05:22:29.076706-0500 INFO Got first page: 100 of 562 total results
+2025-03-05T05:22:29.516860-0500 DEBUG Attempting to download PDF from: http://arxiv.org/pdf/2502.17268v1.pdf
+2025-03-05T05:22:29.676180-0500 INFO PDF saved successfully at: data/MonoTODia_ Translating Monologue Requests to Task-Oriented Dialogues.pdf
+2025-03-05T05:22:33.679269-0500 INFO New paper: MonoTODia: Translating Monologue Requests to Task-Oriented Dialogues (2025-02-24)
+2025-03-05T05:22:34.028430-0500 DEBUG Attempting to download PDF from: http://arxiv.org/pdf/2502.13310v1.pdf
+2025-03-05T05:22:34.142968-0500 INFO PDF saved successfully at: data/Evaluating and Enhancing Out-of-Domain Generalization of Task-Oriented Dialog Systems for Task Completion without Turn-level Dialog Annotations.pdf
+2025-03-05T05:22:38.144215-0500 INFO New paper: Evaluating and Enhancing Out-of-Domain Generalization of Task-Oriented Dialog Systems for Task Completion without Turn-level Dialog Annotations (2025-02-18)
+2025-03-05T05:22:38.508207-0500 DEBUG Attempting to download PDF from: http://arxiv.org/pdf/2502.13298v1.pdf
+2025-03-05T05:22:38.624920-0500 INFO PDF saved successfully at: data/Improving Multi-turn Task Completion in Task-Oriented Dialog Systems via Prompt Chaining and Fine-Grained Feedback.pdf
+2025-03-05T05:22:47.358192-0500 INFO Starting Arxiv tracking
+2025-03-05T05:22:47.367542-0500 INFO Updating with papers since 2025-03-02
+2025-03-05T05:22:47.680770-0500 INFO Got empty first page; stopping generation
+2025-03-05T05:22:47.681057-0500 INFO Fetched 0 papers in 0.31s
+2025-03-05T05:22:47.712780-0500 INFO Markdown generated
+2025-03-05T05:22:47.715866-0500 INFO Process completed
+2025-03-05T05:22:56.469982-0500 INFO Starting Arxiv tracking
+2025-03-05T05:22:56.471607-0500 INFO Updating with papers since 2025-03-05
+2025-03-05T05:22:56.725174-0500 INFO Got empty first page; stopping generation
+2025-03-05T05:22:56.725418-0500 INFO Fetched 0 papers in 0.25s
+2025-03-05T05:22:56.752168-0500 INFO Markdown generated
+2025-03-05T05:22:56.753075-0500 INFO Process completed
